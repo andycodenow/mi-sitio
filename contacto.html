@@ -12,23 +12,36 @@
                 <li><a href="index.html">Ir a inicio</a></li>
             </ul>
         </nav>
-        <h1>Deja tus datos para ser contactado</h1>
+        <h1>Deje sus datos para ser contactado</h1>
     </header>
     <main>
         <h2>Formulario de contacto</h2>
         <p>Al diligenciar el formulario será contactado para recibir toda la información del curso.</p>
         <form action="#" method="post">
-            <label for="name">Nombre</label>
-            <input type="text" id="name" name="name">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre">
 
-            <label for="email">Correo</label>
-            <input type="email" id="email" name="email" required>
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" name="correo" required>
 
-            <label for="phone">Teléfono</label>
-            <input type="tel" id="phone" name="phone">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono">
 
-            <input type="checkbox" id="experience" name="experience">
-            <label for="experience">Marque si tiene experiencia previa</label>
+            <input type="checkbox" id="experiencia-curso" name="experiencia-curso">
+            <label for="experiencia-curso">Marque si tiene experiencia con cursos en línea</label>
+
+            <fieldset>
+                <legend>¿Cuál es su nivel de experiencia para el curso aplicado?</legend>
+
+                <input type="radio" id="alta-experiencia" name="experiencia" value="alta-experiencia" required>
+                <label for="alta-experiencia">Alto</label>
+
+                <input type="radio" id="media-experiencia" name="experiencia" value="media-experiencia">
+                <label for="media-experiencia">Medio</label>
+
+                <input type="radio" id="baja-experiencia" name="experiencia" value="baja-experiencia">
+                <label for="baja-experiencia">Bajo</label>
+            </fieldset>
 
             <button type="submit">Enviar</button>
         </form>
